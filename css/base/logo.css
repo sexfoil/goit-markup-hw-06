@@ -1,0 +1,9 @@
+.logo {
+    color: var(--color-primary-brand-iris);
+    font-family: var(--font-logo);
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: var(--font-weight-logo-extrabold);
+    letter-spacing: .03em;
+    text-transform: uppercase;
+}

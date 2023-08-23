@@ -1,0 +1,112 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    color: var(--color-text-slate);
+    background-color: var(--color-white-background-white);
+    font-family: var(--font-primary);
+}
+
+.header-one {
+    font-weight: var(--font-weight-primary-bold);
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: var(--letter-spacing-main);
+    text-align: center;
+}
+
+.header-two {
+    color: var(--color-dark-navy-blue);
+    font-weight: var(--font-weight-primary-bold);
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.header-three {
+    color: var(--color-dark-navy-blue);
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-body {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-small-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.text-body-medium {
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-button-text {
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.text-link-text {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: var(--letter-spacing-small);
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link p {
+    color: var(--color-text-slate);
+}
+
+.list {
+    list-style: none;
+}
+
+.text-header {
+    text-transform: capitalize;
+    text-align: center;
+}

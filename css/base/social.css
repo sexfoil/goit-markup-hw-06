@@ -1,0 +1,18 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.social-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-brand-iris);
+    border-radius: 50%;
+}
+
+.social-icon-image {
+    fill: var(--color-light-cloud);
+}

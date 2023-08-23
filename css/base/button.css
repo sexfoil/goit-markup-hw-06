@@ -1,0 +1,41 @@
+.btn {
+    font-family: var(--font-primary);
+    cursor: pointer;
+    border: none;
+}
+
+.filter-btn {
+    color: var(--color-primary-brand-iris);
+    background-color: var(--color-light-cloud);
+    border: 1px solid var(--color-accent-cornflower);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--color-white-background-white);
+    background-color: var(--color-pressed-state-ocean);
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cta-btn {
+    min-width: 169px;
+    height: 56px;
+    color: var(--color-white-background-white);
+    background-color: var(--color-primary-brand-iris);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background-color: var(--color-pressed-state-ocean);
+}

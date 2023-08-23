@@ -1,0 +1,27 @@
+:root {
+    --color-primary-brand-iris: #4D5AE5;
+    --color-pressed-state-ocean: #404BBF;
+    --color-dark-navy-blue: #2E2F42;
+    --color-success-green: #31D0AA;
+    --color-text-slate: #434455;
+    --color-subtle-text-light-slate: #8E8F99;
+    --color-accent-cornflower: #E7E9FC;
+    --color-light-cloud: #F4F4FD;
+    --color-modal-overlay-navy-blue-modal: #2E2F4240;
+    --color-hero-background-grey: #2E2F4270;
+    --color-white-background-white: #FFFFFF;
+    --color-modal-background-dairy: #FCFCFC;
+
+    --font-primary: "Roboto", sans-serif;
+    --font-logo: "Raleway", sans-serif;
+
+    --font-weight-primary-regular: 400;
+    --font-weight-primary-medium: 500;
+    --font-weight-primary-bold: 700;
+    --font-weight-primary-black: 900;
+
+    --font-weight-logo-extrabold: 800;
+
+    --letter-spacing-main: .02em;
+    --letter-spacing-small: .04em;
+}

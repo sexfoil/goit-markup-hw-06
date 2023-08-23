@@ -1,0 +1,10 @@
+.section {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-item {
+    display: flex;
+    flex-basis: 100%;
+}
