@@ -1,5 +1,5 @@
 .portfolio {
-    padding-top: 96px;
+    padding-top: 48px;
     display: flex;
     justify-content: center;
 }
@@ -10,9 +10,11 @@
 
 .filter-group {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 16px;
+    column-gap: 24px;
+    margin-bottom: 48px;
 }
 
 .filter-btn {
@@ -22,14 +24,17 @@
 
 .portfolio-group {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.portfolio-group>li {
+    width: 100%;
 }
 
 .portfolio-item {
     display: block;
-    flex-basis: calc((100% - 2*24px)/3);
+    max-width: 396px;
     background-color: var(--color-white-background-white);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -44,6 +49,10 @@
 .portfolio-item-image {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-item-image>img {
+    width: 100%;
 }
 
 .portfolio-item-overlay {
@@ -75,4 +84,40 @@
 
 .portfolio-card-textblock>h2 {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        padding-top: 64px;
+    }
+
+    .filter-group {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+
+    .portfolio-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
+    }
+
+    .portfolio-group>li {
+        width: calc((100% - 24px) / 2);
+        max-width: 356px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio {
+        padding-top: 100px;
+    }
+
+    .portfolio-group>li {
+        width: calc((100% - 2 * 24px) / 3);
+        max-width: 360px;
+    }
 }

@@ -27,6 +27,87 @@
   </head>
 
   <body>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile modal-btn-close btn js-close-menu" type="button">
+        <svg class="btn-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-btn_close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-container">
+        <nav class="mobile navigation">
+          <ul class="mobile nav-group list">
+            <li>
+              <a class="mobile nav-menu header-two link" href="./index.html"
+                >Studio
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile nav-active nav-menu header-two link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="mobile nav-menu header-two link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address class="mobile address">
+            <ul class="mobile nav-group list">
+              <li>
+                <a
+                  class="mobile big-number nav-address header-two link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile nav-address header-three link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="social-list">
+              <li class="mobile-social-item">
+                <a class="social-item-icon link" href="">
+                  <svg class="social-icon-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-social_instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="social-item-icon link" href="">
+                  <svg class="social-icon-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-social_twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="social-item-icon link" href="">
+                  <svg class="social-icon-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-social_facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="social-item-icon link" href="">
+                  <svg class="social-icon-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-social_linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class="page-header">
       <div class="header-content container">
         <nav class="navigation">
@@ -36,12 +117,12 @@
           <ul class="nav-group list">
             <li>
               <a class="nav-menu text-body-medium link" href="./index.html"
-                >Studio</a
-              >
+                >Studio
+              </a>
             </li>
             <li>
               <a
-                class="nav-active active-page nav-menu text-body-medium link"
+                class="nav-active nav-menu text-body-medium link"
                 href="./portfolio.html"
                 >Portfolio</a
               >
@@ -67,6 +148,9 @@
             </li>
           </ul>
         </address>
+        <svg class="menu-hamburger js-open-menu" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu_hamburger3"></use>
+        </svg>
       </div>
     </header>
 
@@ -291,7 +375,7 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="footer-main">
+        <div class="footer-general">
           <a class="footer-logo logo link" href="./index.html">
             Web<span class="logo-tail">Studio</span>
           </a>
@@ -357,5 +441,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
