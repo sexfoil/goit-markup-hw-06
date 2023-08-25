@@ -8,11 +8,13 @@
 
 .customer-group {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
 }
 
 .customer-item {
-    width: calc((100% - 5 * 24px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -38,4 +40,20 @@
 .customer-icon:focus {
     border-color: var(--color-pressed-state-ocean);
     color: var(--color-pressed-state-ocean);
+}
+
+@media screen and (min-width: 768px) {
+    .customer-group {
+        column-gap: 24px;
+    }
+
+    .customer-item {
+        width: calc((100% - 2 * 24px) / 3);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .customer-item {
+        width: calc((100% - 5 * 24px) / 6);
+    }
 }
