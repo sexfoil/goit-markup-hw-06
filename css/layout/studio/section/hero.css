@@ -1,12 +1,13 @@
 .hero-screen {
     position: relative;
     overflow: hidden;
-    padding: 188px 0;
+    padding: 112px 0;
     margin: 0 auto;
     color: var(--color-white-background-white);
-    max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../../../../images/hero-people-office-full.jpg");
+    max-width: 428px;
+    background-image: 
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../../../../images/hero-people-office-full.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,10 +15,48 @@
 
 .hero-content {
     flex-direction: column;
-    gap: 48px;
+    gap: 72px;
     align-items: center;
 }
 
 .hero-content>h1 {
-    max-width: 496px;
+    max-width: 320px;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content>h1 {
+        font-size: 36px;
+        line-height: 1.11;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-screen {
+        max-width: 768px;
+        background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../../../../images/hero-people-office-full.jpg");
+    }
+
+    .hero-content {
+        gap: 36px;
+    }
+
+    .hero-content>h1 {
+        max-width: 496px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-screen {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../../../../images/hero-people-office-full.jpg");
+    }
+    
+    .hero-content {
+        gap: 48px;
+    }    
 }
