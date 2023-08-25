@@ -30,7 +30,6 @@
 
 
 @media screen and (max-width: 767px) {
-
     .menu-hamburger {
         fill: var(--color-dark-navy-blue);
         width: 32px;
@@ -45,7 +44,7 @@
 
     .address {
         display: none;
-    }
+    }    
 }
 
 
@@ -81,6 +80,11 @@
         font-style: normal;
         display: flex;
     }
+
+    .address>.nav-group {
+        flex-direction: column;
+        gap: 12px;        
+    }
     
     .nav-address {
         color: var(--color-text-slate);
@@ -108,5 +112,20 @@
         height: 4px;
         background-color: var(--color-pressed-state-ocean);
         border-radius: 2px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .address>.nav-group {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    .nav-address {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: var(--letter-spacing-small);
     }
 }
