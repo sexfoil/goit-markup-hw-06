@@ -10,7 +10,8 @@
 
 @import './layout/studio/header.css';
 @import './layout/studio/footer.css';
-@import './layout/studio/modal-window.css';
+@import './layout/studio/modal/modal-backdrop.css';
+@import './layout/studio/modal/modal-form.css';
 @import './layout/studio/mobile-menu.css';
 @import './layout/studio/section/hero.css';
 @import './layout/studio/section/features.css';
