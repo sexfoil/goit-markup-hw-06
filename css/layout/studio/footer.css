@@ -120,7 +120,6 @@
     .page-footer>.container {
         flex-direction: row;
         column-gap: 24px;
-        margin-left: 108px;
         align-items: start;
     }
 
@@ -141,6 +140,12 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-content {
+        max-width: 552px;
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .page-footer {
         padding: 100px 0;
@@ -149,6 +154,8 @@
     .page-footer>.container {
         flex-wrap: nowrap;
         align-items: baseline;
+        margin-left: auto;
+        column-gap: 0;
     }
 
     .footer-general {
