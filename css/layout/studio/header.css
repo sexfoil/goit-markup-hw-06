@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .nav-address {
         font-size: 12px;
         line-height: 1.17;
